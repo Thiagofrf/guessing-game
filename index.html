@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Guessing Game</title>
 </head>
@@ -12,12 +15,12 @@
             <div class="guess-container">
                 <h1>Guessing game</h1>
                 <p>Guess the number between 0 to 10</p>
-                <div class="guessing-action">
-                    <input type="number" name="number-guess" id="number-guess">
+                <form class="guessing-action">
+                    <input type="number" name="number-guess" id="number-guess" min="0" max="10">
                     <button>Guess</button>
-                </div>
+                </form>
             </div>
-            <div class="result-container">
+            <div class="result-container hide">
                 <h2>You got it right in x tries</h2>
                 <button>Play again</button>
             </div>
