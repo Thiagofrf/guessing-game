@@ -14,7 +14,7 @@ function handleTryClick (event) {
     const inputNumber = document.querySelector('input#number-guess')
 
     if(Number(inputNumber.value) === randomNumber) {
-        let resultContainerText = document.querySelector(".result-container h2")
+        let resultContainerText = resultContainer.querySelector("h2")
         let innerResultText = `You got it right in ${count} tries`
 
         guessContainer.classList.toggle('hide')
